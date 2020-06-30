@@ -11,11 +11,11 @@ rustup target add riscv32imac-unknown-none-elf
 
 ## Dependencies
 * [RISC-V GNU toolchain](https://dl.sipeed.com/LONGAN/platformio/dl-packages/toolchain-gd32v-v9.2.0-linux.tar.gz)
-* dfu-utils
+* [dfu-utils](https://sourceforge.net/p/dfu-util/dfu-util/ci/master/tree/) *Important* use the latest git version, see [this issue](https://github.com/riscv-rust/longan-nano/issues/5)
 
-Arch Linux:
+Install GNU toolchain on arch linux:
 ```
-pacman -S riscv32-elf-gdb riscv32-elf-binutils dfu-utils
+pacman -S riscv32-elf-gdb riscv32-elf-binutils
 ```
 
 # How to build & flash
